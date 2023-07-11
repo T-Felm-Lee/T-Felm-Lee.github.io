@@ -46,7 +46,7 @@ $dark:          $gray-900;
   background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
 }
 
-@mixin gradient-y-three-colors($start-color: $black, $mid-color: $darkblue, $color-stop: 14%, $end-color: $darkpurple) {
+@mixin gradient-y-three-colors($start-color: $darkblue, $mid-color: $black, $color-stop: 50%, $end-color: $darkpurple) {
   background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
 }
 
