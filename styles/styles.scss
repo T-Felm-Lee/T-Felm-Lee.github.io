@@ -4,7 +4,7 @@ $darkblue: #090754;
 $purple:  #6f42c1;
 $darkpurple: #33024a;
 $pink:    #d63384;
-$red:     #dc3545;
+$red:     #8e000e;
 $orange:  #fd7e14;
 $yellow:  #ffc107;
 $green:   #198754;
@@ -46,10 +46,38 @@ $dark:          $gray-900;
   background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
 }
 
-@mixin gradient-y-three-colors($start-color: $darkblue, $mid-color: $black, $color-stop: 50%, $end-color: $darkpurple) {
+@mixin gradient-y-three-colors($start-color: $black, $mid-color: $gray-800, $color-stop: 50%, $end-color: $red) {
   background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
 }
 
 #body_gradient {
   @include gradient-y-three-colors;
+}
+
+#nav_branding {
+  color: rgb(212, 198, 198);
+}
+
+#nav_branding:hover {
+  color: rgb(155, 0, 0);
+}
+
+#nav_text {
+  color: rgb(134, 126, 126);
+}
+
+#nav_text_active {
+  color: rgb(255, 255, 255);
+}
+
+#nav_text:hover {
+  color: rgb(151, 0, 0);
+}
+
+#nav_toggle_icon {
+  background-color: rgb(152, 152, 152);
+}
+
+#nav_toggle_icon:hover {
+  background-color: rgb(132, 0, 0);
 }

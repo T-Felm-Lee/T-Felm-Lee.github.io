@@ -15,28 +15,33 @@
 <body class="d-flex h-100 text-center text-bg-dark" id="body_gradient">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 <header class="mb-auto mt-5">
-  <div>
-    <h1 class="mb-0 p-2 float-md-start">Phlegmlee</h1>
-    <div>
-      <p class="mb-0 p-2 float-md-start mt-4">A Hobiest Game Developer and Asset Creator</p>
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark bg-opacity-25">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="nav_branding">Phlegmlee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" id="nav_toggle_icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" id="nav_text_active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gameassets.html" id="nav_text">Assets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="games.html" id="nav_text">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" id="nav_text">About</a>
+          </li>
+        </ul>
+        <span class="navbar-text" id="nav_text_active">
+          A Hobbyist Game Developer and Asset Creator
+        </span>
+      </div>
     </div>
-  </div>
-  <div>
-    <ul class="nav p-4 float-md-end">
-        <li class="nav-item">
-            <a class="nav-link active text-bg-secondary" href="index.html" aria-current="page">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-bg-dark" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-bg-dark" href="gameassets.html">Game Assets</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-bg-dark" href="games.html">Games</a>
-        </li>
-    </ul>
-  </div>
+  </nav>
 </header>
 
 <main class="px-3 flex-row">

@@ -15,37 +15,45 @@
 <body class="d-flex h-100 text-center text-bg-dark" id="body_gradient">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 <header class="mb-auto mt-5">
-  <div>
-    <h1 class="mb-0 p-2 float-md-start">Phlegmlee</h1>
-    <div>
-      <p class="mb-0 p-2 float-md-start mt-4">Asset Creation</p>
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark bg-opacity-25">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="nav_branding">Phlegmlee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" id="nav_toggle_icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="nav_text">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="gameassets.html" id="nav_text_active">Assets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="games.html" id="nav_text">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" id="nav_text">About</a>
+          </li>
+        </ul>
+        <span class="navbar-text" id="nav_text_active">
+          A Hobbyist Game Developer and Asset Creator
+        </span>
+      </div>
     </div>
-  </div>
-  <div>
-    <ul class="nav p-4 float-md-end">
-        <li class="nav-item">
-            <a class="nav-link text-bg-dark" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-bg-dark" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active text-bg-secondary" href="gameassets.html" aria-current="page">Game Assets</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-bg-dark" href="games.html">Games</a>
-        </li>
-    </ul>
-  </div>
+  </nav>
 </header>
 
 <main class="px-3 flex-row">
-  <h1>Phlegmlee's Unity Asset Store</h1>
+  <h1 class="mb-5">Game Assets</h1>
+
+  <h3>Unity Asset Store</h1>
   <p class="lead">Visit the store to see all the available assets.</p>
   <p class="lead">
     <a href="https://assetstore.unity.com/publishers/93544" class="btn btn-lg btn-light fw-bold border-white bg-white">Unity Store</a>
   </p>
-  <h1>Phlegmlee's Unreal Engine Asset Store</h1>
+
+  <h3 class="mt-5">Unreal Engine Asset Store</h1>
   <p class="lead">Visit the store to see all the available assets.</p>
   <p class="lead">
     <a href="https://unrealengine.com" class="btn btn-lg btn-light fw-bold border-white bg-white">Unreal Engine Store</a>
