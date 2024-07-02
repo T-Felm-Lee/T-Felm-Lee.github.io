@@ -1,4 +1,4 @@
-$blue:    #0d6efd;
+$blue:    #005be4;
 $indigo:  #6610f2;
 $darkblue: #090754;
 $purple:  #6f42c1;
@@ -30,6 +30,10 @@ $danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-900;
 
+$logo-primary: #10881a;
+$logo-secondary: #000000;
+$logo-teri: #000000;
+
 @mixin gradient-x($start-color: $gray-700, $end-color: $gray-800, $start-percent: 0%, $end-percent: 100%) {
   background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
 }
@@ -42,42 +46,36 @@ $dark:          $gray-900;
   background-image: linear-gradient($deg, $start-color, $end-color);
 }
 
-@mixin gradient-x-three-colors($start-color: $blue, $mid-color: $purple, $color-stop: 50%, $end-color: $red) {
+@mixin gradient-x-three-colors($start-color: $logo-teri, $mid-color: $logo-primary, $color-stop: 50%, $end-color: $logo-teri) {
   background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
 }
 
-@mixin gradient-y-three-colors($start-color: $black, $mid-color: $gray-800, $color-stop: 50%, $end-color: $red) {
+@mixin gradient-y-three-colors($start-color: $logo-teri, $mid-color: $logo-primary, $color-stop: 50%, $end-color: $logo-secondary) {
   background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
 }
 
+@mixin solid-color($start-color: $logo-primary, $end-color: $logo-primary, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+}
+
 #body_gradient {
-  @include gradient-y-three-colors;
+  @include gradient-x-three-colors;
 }
 
-#nav_branding {
-  color: rgb(212, 198, 198);
+#call_to_action {
+  background-color: #000;
+  color: $white;
 }
 
-#nav_branding:hover {
-  color: rgb(155, 0, 0);
+#link {
+  text-decoration: none;
 }
 
-#nav_text {
-  color: rgb(134, 126, 126);
+#logo {
+  width: 20%;
+  height: 20%;
 }
 
-#nav_text_active {
-  color: rgb(255, 255, 255);
-}
-
-#nav_text:hover {
-  color: rgb(151, 0, 0);
-}
-
-#nav_toggle_icon {
-  background-color: rgb(152, 152, 152);
-}
-
-#nav_toggle_icon:hover {
-  background-color: rgb(132, 0, 0);
+#buisness_name {
+  font-size: large;
 }
