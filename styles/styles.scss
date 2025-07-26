@@ -46,7 +46,7 @@ $logo-teri: #000000;
   background-image: linear-gradient($deg, $start-color, $end-color);
 }
 
-@mixin gradient-x-three-colors($start-color: $gray-300, $mid-color: $gray-100, $color-stop: 50%, $end-color: $gray-300) {
+@mixin gradient-x-three-colors($start-color: $gray-400, $mid-color: $gray-100, $color-stop: 50%, $end-color: $gray-400) {
   background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
 }
 
@@ -58,6 +58,70 @@ $logo-teri: #000000;
   background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
 }
 
+
 #body_gradient {
   @include gradient-x-three-colors;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bg-img{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.header{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.call-to-action{
+  margin-top: 15%;
+  text-align: center;
+  color: white;
+}
+
+.tagline{
+  margin-top: 3%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.main{
+  margin-top: 12%;
+  width: 100vw;
+  position: relative;
+}
+
+.logo{
+  height: 50%;
+  width: 50%;
+}
+
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: 0.2vh;
+  text-align: center;
 }
