@@ -1,0 +1,53 @@
+---
+const { pathname } = Astro.url;
+
+import home_bg from '../assets/mountain-splash.jpg';
+import services_bg from '../assets/bigstock-Hummingbird.webp';
+
+
+---
+
+
+<!-- BEGIN HEADER-->
+    <header class={pathname.slice(1) === '' ? 'header' : 'header-half'}>
+
+        <!-- Header Background Image-->
+        <img 
+        class={pathname.slice(1) === '' ? 'bg-img' : 'bg-img-half'} 
+        src={pathname.slice(1) === '' ? home_bg.src : services_bg.src} 
+        alt="background image" 
+        fetchpriority="high"
+        />
+
+        <!-- NAVBAR BRAND AND LINKS -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container mt-4">
+                <a class="navbar-brand" href="/">POTTER'S HAND  <br>  COUNCELING SERVICES</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class={pathname.slice(1) === '' ? 'nav-link active' : 'nav-link'} href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class={pathname.slice(1) === 'services' ? 'nav-link active' : 'nav-link'} href="/services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class={pathname.slice(1) === 'contact' ? 'nav-link active' : 'nav-link'} href="/contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class={pathname.slice(1) === 'clients' ? 'nav-link active' : 'nav-link'} href="/clients">CLIENT PORTAL</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Call to Action -->
+        <div class="container">
+            <h1 class="call-to-action">CALL TO ACTION</h1>
+            <h6 class="tagline">Your companies tagline.</h4>
+        </div>
+    </header>
