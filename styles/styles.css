@@ -19,7 +19,7 @@ body {
 }
 
 .bg-img-half {
-  height: 75vh;
+  height: 50vh;
   width: 100vw;
   object-fit: cover;
   filter: brightness(0.6);
@@ -40,7 +40,7 @@ body {
 }
 
 .header-half {
-  height: 75vh;
+  height: 50vh;
   width: 100vw;
   object-fit: cover;
   position: relative;
