@@ -1,0 +1,43 @@
+.body {
+  background-image: linear-gradient(to right, #100c0c, #090d09 50%, #100c0c);
+}
+
+.logo {
+  height: 15%;
+  width: 15%;
+}
+
+.header {
+  text-align: center;
+}
+
+.games {
+  text-align: center;
+}
+
+.assets {
+  text-align: center;
+}
+
+.applications {
+  text-align: center;
+}
+
+h4 {
+  color: #e0ff8f;
+}
+
+p {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #64762d;
+}
+
+.footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
