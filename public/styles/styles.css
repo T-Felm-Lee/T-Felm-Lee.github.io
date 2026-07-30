@@ -1,44 +1,43 @@
 .body {
-  background-image: linear-gradient(to right, #100c0c, #090d09 50%, #100c0c);
-}
+  background-image: linear-gradient(to right, #100c0c, #090d09 50%, #100c0c); }
 
 .logo {
   height: 15%;
-  width: 15%;
-}
+  width: 15%; }
+
+.icon {
+  height: 8%;
+  width: 8%; }
 
 .header {
   text-align: center;
-}
+  color: white; }
 
 .games {
-  text-align: center;
-}
+  text-align: center; }
 
 .assets {
-  text-align: center;
-}
+  text-align: center; }
+
+.plugins {
+  text-align: center; }
 
 .applications {
-  text-align: center;
-}
+  text-align: center; }
 
 h4 {
   color: #e0ff8f;
-}
+  margin-top: 5%; }
 
 p {
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 a {
   text-decoration: none;
-  color: #64762d;
-}
+  color: #64762d; }
 
 .footer {
   text-align: center;
-  margin-top: 1.5%;
-}
+  margin-top: 1.5%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -69,8 +69,14 @@ $logo-primary: #64762d;
   width: 15%;
 }
 
+.icon{
+  height: 8%;
+  width: 8%;
+}
+
 .header{
   text-align: center;
+  color:white;
 }
 
 .games{
@@ -81,12 +87,17 @@ $logo-primary: #64762d;
   text-align: center;
 }
 
+.plugins{
+  text-align: center;
+}
+
 .applications{
   text-align: center;
 }
 
 h4{
   color: $itch-teri;
+  margin-top: 5%;
 }
 
 p{
